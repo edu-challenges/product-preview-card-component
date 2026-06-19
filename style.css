@@ -1,4 +1,120 @@
-/* attribution */
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Variables - Tokens */
+:root {
+  /* Colors */
+  --black: #1c232b;
+  --white: #ffffff;
+  --grey: #6c7289;
+  --cream: #f2eae2;
+  --green-500: #3d8168;
+  --green-700: #1a4032;
+
+  /* Spacing */
+  --spacing-500: 2.5rem; /* 40px / 16 */
+  --spacing-400: 2rem; /* 32px / 16 */
+  --spacing-300: 1.5rem; /* 24px / 16 */
+  --spacing-200: 1rem; /* 16px / 16 */
+  --spacing-100: 0.5rem; /* 8px / 16 */
+  --spacing-50: 0.25rem; /* 4px / 16 */
+
+  /* Typography */
+
+  --heading-font: "Fraunces";
+  --heading-size: 2rem; /* 32px / 16 */
+  --heading-lh: 100%;
+  --heading-weight: 700; /* bold */
+
+  --button-font: "Montserrat";
+  --button-size: 0.9rem; /* 14px / 16 */
+  --button-lh: 110%;
+  --button-weight: 700; /* bold */
+
+  --body-font: "Montserrat";
+  --body-size: 0.9rem; /* 14px / 16 */
+  --body-lh: 160%;
+  --body-weight: 500; /* medium */
+
+  --tag-font: "Montserrat";
+  --tag-size: 0.75rem; /* 12px / 16 */
+  --tag-lh: 120%;
+  --tag-weight: 500; /* medium */
+  --tag-letter-spacing: 0.41em; /* 5px / 12px */
+
+  --original-price-font: "Montserrat";
+  --original-price-size: 0.8rem; /* 13px / 16 */
+  --original-price-lh: 120%;
+  --original-price-weight: 500; /* medium */
+}
+
+/* Attribution */
 
 .attribution {
   font-size: 0.6875rem;
