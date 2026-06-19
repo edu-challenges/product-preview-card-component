@@ -137,6 +137,11 @@ h6 {
     content: url("./images/icon-cart.svg");
     padding-inline-end: var(--spacing-100);
   }
+
+  &:hover {
+    background-color: var(--green-700);
+    cursor: pointer;
+  }
 }
 
 .body {
