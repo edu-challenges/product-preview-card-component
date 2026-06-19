@@ -142,6 +142,11 @@ h6 {
     background-color: var(--green-700);
     cursor: pointer;
   }
+
+  &:focus-visible {
+    outline: 2px solid var(--green-700);
+    outline-offset: 2px;
+  }
 }
 
 .body {
