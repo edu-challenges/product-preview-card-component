@@ -183,10 +183,6 @@ body {
       border-radius: 0.5rem;
       overflow: hidden;
 
-      img {
-        border-radius: inherit;
-      }
-
       .content {
         display: flex;
         flex-direction: column;
@@ -203,6 +199,26 @@ body {
 
   .price {
     color: var(--green-500);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    article {
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        max-width: 600px;
+
+        picture {
+          width: 50%;
+        }
+
+        .content {
+          width: 50%;
+        }
+      }
+    }
   }
 }
 
