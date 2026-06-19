@@ -87,28 +87,28 @@ h6 {
 
   /* Typography */
 
-  --heading-font: "Fraunces";
+  --heading-font: "Fraunces", serif;
   --heading-size: 2rem; /* 32px / 16 */
   --heading-lh: 100%;
   --heading-weight: 700; /* bold */
 
-  --button-font: "Montserrat";
+  --button-font: "Montserrat", sans-serif;
   --button-size: 0.9rem; /* 14px / 16 */
   --button-lh: 110%;
   --button-weight: 700; /* bold */
 
-  --body-font: "Montserrat";
+  --body-font: "Montserrat", sans-serif;
   --body-size: 0.9rem; /* 14px / 16 */
   --body-lh: 160%;
   --body-weight: 500; /* medium */
 
-  --tag-font: "Montserrat";
+  --tag-font: "Montserrat", sans-serif;
   --tag-size: 0.75rem; /* 12px / 16 */
   --tag-lh: 120%;
   --tag-weight: 500; /* medium */
   --tag-letter-spacing: 0.41em; /* 5px / 12px */
 
-  --original-price-font: "Montserrat";
+  --original-price-font: "Montserrat", sans-serif;
   --original-price-size: 0.8rem; /* 13px / 16 */
   --original-price-lh: 120%;
   --original-price-weight: 500; /* medium */
