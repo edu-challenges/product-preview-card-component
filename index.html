@@ -23,11 +23,11 @@
   </head>
 
   <body>
-    <main>
-      <article>
+    <article>
+      <div class="wrapper">
         <picture>
           <source
-            media="(min-width: 600px)"
+            media="(min-width: 768px)"
             srcset="./images/image-product-desktop.jpg"
           />
           <img
@@ -35,23 +35,26 @@
             alt="Gabrielle Essence perfume bottle on a light surface surrounded by green leaves"
           />
         </picture>
-        <p class="tag">Perfume</p>
-        <h2 class="heading">Gabrielle Essence Eau De Parfum</h2>
-        <p class="body">
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <p>
-          <span class="heading">$149.99</span>
-          <s class="original-price">$169.99</s>
-        </p>
-        <button class="button">Add to Cart</button>
-      </article>
-    </main>
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </footer>
+        <div class="content">
+          <p class="tag">Perfume</p>
+          <h2 class="heading">Gabrielle Essence Eau De Parfum</h2>
+          <p class="body">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="prices">
+            <span class="heading price">$149.99</span>
+            <s class="original-price">$169.99</s>
+          </p>
+          <button class="button">Add to Cart</button>
+        </div>
+      </div>
+
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </footer>
+    </article>
   </body>
 </html>

@@ -86,7 +86,6 @@ h6 {
   --spacing-50: 0.25rem; /* 4px / 16 */
 
   /* Typography */
-
   --heading-font: "Fraunces", serif;
   --heading-size: 2rem; /* 32px / 16 */
   --heading-lh: 100%;
@@ -120,6 +119,7 @@ h6 {
   font-size: var(--heading-size);
   line-height: var(--heading-lh);
   font-weight: var(--heading-weight);
+  color: var(--black);
 }
 
 .button {
@@ -127,6 +127,16 @@ h6 {
   font-size: var(--button-size);
   line-height: var(--button-lh);
   font-weight: var(--button-weight);
+  background-color: var(--green-500);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  padding: var(--spacing-200);
+
+  &::before {
+    content: url("./images/icon-cart.svg");
+    padding-inline-end: var(--spacing-100);
+  }
 }
 
 .body {
@@ -134,6 +144,7 @@ h6 {
   font-size: var(--body-size);
   line-height: var(--body-lh);
   font-weight: var(--body-weight);
+  color: var(--grey);
 }
 
 .tag {
@@ -143,6 +154,7 @@ h6 {
   font-weight: var(--tag-weight);
   letter-spacing: var(--tag-letter-spacing);
   text-transform: uppercase;
+  color: var(--grey);
 }
 
 .original-price {
@@ -150,10 +162,51 @@ h6 {
   font-size: var(--original-price-size);
   line-height: var(--original-price-lh);
   font-weight: var(--original-price-weight);
+  color: var(--grey);
+  padding-inline-start: var(--spacing-200);
+}
+
+/* Component styles */
+body {
+  article {
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-400);
+    padding: var(--spacing-200);
+
+    .wrapper {
+      background-color: var(--white);
+      border-radius: 0.5rem;
+      overflow: hidden;
+
+      img {
+        border-radius: inherit;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-300);
+        padding: var(--spacing-400);
+      }
+    }
+  }
+
+  .prices {
+    display: flex;
+    align-items: center;
+  }
+
+  .price {
+    color: var(--green-500);
+  }
 }
 
 /* Attribution */
-
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
