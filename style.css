@@ -114,6 +114,43 @@ h6 {
   --original-price-weight: 500; /* medium */
 }
 
+/* Classes */
+.heading {
+  font-family: var(--heading-font);
+  font-size: var(--heading-size);
+  line-height: var(--heading-lh);
+  font-weight: var(--heading-weight);
+}
+
+.button {
+  font-family: var(--button-font);
+  font-size: var(--button-size);
+  line-height: var(--button-lh);
+  font-weight: var(--button-weight);
+}
+
+.body {
+  font-family: var(--body-font);
+  font-size: var(--body-size);
+  line-height: var(--body-lh);
+  font-weight: var(--body-weight);
+}
+
+.tag {
+  font-family: var(--tag-font);
+  font-size: var(--tag-size);
+  line-height: var(--tag-lh);
+  font-weight: var(--tag-weight);
+  letter-spacing: var(--tag-letter-spacing);
+}
+
+.original-price {
+  font-family: var(--original-price-font);
+  font-size: var(--original-price-size);
+  line-height: var(--original-price-lh);
+  font-weight: var(--original-price-weight);
+}
+
 /* Attribution */
 
 .attribution {
